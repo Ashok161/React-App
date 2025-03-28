@@ -61,6 +61,6 @@ My SQL JSON App is a dummy web-based SQL query interface built using React. The 
 - **Dynamic Table Structures:**  
   The right sidebar displays table schemas in visually separated, rounded boxes, including the data type for each column.
 - **CSV Export:**  
-  Query results can be exported to CSV using a comma delimiter to ensure proper column separation.
+  Query results can be exported to CSV file format for further use.
 
 ---
