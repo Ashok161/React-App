@@ -6,7 +6,7 @@ import SqlInput from "./components/SqlInput";
 import alasql from "alasql";
 
 function App() {
-  const [query, setQuery] = useState("SELECT * FROM customers");
+  const [query, setQuery] = useState("SELECT * FROM customers;");
   const [queryResult, setQueryResult] = useState([]);
 
   const validateSQL = (query) => {
