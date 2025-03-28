@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# My SQL JSON App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+My SQL JSON App is a dummy web-based SQL query interface built using React. The application allows users to type SQL queries into an editor with syntax highlighting and autosuggestions. Users can run these queries on in-memory JSON data (using AlaSQL) and view the results in a tabulated format. The interface also includes a sidebar with predefined queries and a right sidebar displaying table structures with data types. Additionally, the app supports CSV export functionality for query results.
 
-In the project directory, you can run:
+## Tech Stack & Major Packages
 
-### `npm start`
+- **JavaScript Framework:** React (bootstrapped with Create React App)
+- **SQL Execution:** AlaSQL (in-memory SQL engine for JSON data)
+- **Code Editor & Syntax Highlighting:**
+  - `react-simple-code-editor` for the editable SQL input field
+  - `PrismJS` for syntax highlighting of SQL keywords (customized to display keywords in blue)
+- **Styling:** Plain CSS (no Tailwind CSS)
+- **Version Control & Deployment:**
+  - Code hosted on GitHub
+  - Deployed using Netlify/Vercel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Page Load Time & Measurement
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Measured Page Load Time:** Approximately **1.2 seconds**
+- **Measurement Tools:**
+  - **Chrome DevTools Network Tab:** to measure the time taken for initial requests and resource loading
+  - **[PageSpeed Insights](https://pagespeed.web.dev/):** for performance audits and load time metrics
+- The application's load time is measured from the initial request until the main UI is fully rendered in the browser.
 
-### `npm test`
+## Performance Optimizations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Code Splitting:** Leveraged Create React App's built-in code splitting to reduce initial bundle size.
+- **Asynchronous Data Fetching:** JSON data is fetched asynchronously on app mount, ensuring the UI renders quickly.
+- **In-Memory Query Execution:** Using AlaSQL allows for near-instant execution of SQL queries on the provided JSON data.
+- **Minimal Dependencies:** Kept third-party libraries to a minimum to ensure faster load times.
+- **Optimized CSS:** Custom plain CSS was used instead of heavier frameworks, resulting in a smaller CSS bundle and faster rendering.
 
-### `npm run build`
+## How to Run the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```bash
+   git clone <repository_url>
+   ```
+2. **Navigate into the project directory:**
+   ```bash
+   cd my-sql-app
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+5. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Additional Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **SQL Editor with Syntax Highlighting & Autosuggestions:**  
+  Utilizes `react-simple-code-editor` and `PrismJS` to highlight SQL keywords in blue as you type, providing a more dynamic coding experience.
+- **Predefined Query Sidebar:**  
+  A left sidebar with multiple predefined queries that users can select to populate the SQL editor.
+- **Dynamic Table Structures:**  
+  The right sidebar displays table schemas in visually separated, rounded boxes, including the data type for each column.
+- **CSV Export:**  
+  Query results can be exported to CSV using a comma delimiter to ensure proper column separation.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
