@@ -2,7 +2,7 @@
 
 ## Overview
 
-My SQL JSON App is a dummy web-based SQL query interface built using React. The application allows users to type SQL queries into an editor with syntax highlighting and autosuggestions. Users can run these queries on in-memory JSON data (using AlaSQL) and view the results in a tabulated format. The interface also includes a sidebar with predefined queries and a right sidebar displaying table structures with data types. Additionally, the app supports CSV export functionality for query results.
+My SQL JSON App is a dummy web-based SQL query interface built using React. The application allows users to type SQL queries into an editor with syntax highlighting as well. Users can run these queries on in-memory JSON data (using AlaSQL) and view the results in a tabulated format. The interface also includes a sidebar with predefined queries and a right sidebar displaying table structures with data types. Additionally, the app supports CSV export functionality for query results.
 
 ## Tech Stack & Major Packages
 
