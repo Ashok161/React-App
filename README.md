@@ -18,7 +18,7 @@ My SQL JSON App is a dummy web-based SQL query interface built using React. The 
 
 ## Page Load Time & Measurement
 
-- **Measured Page Load Time:** Approximately **1.2 seconds**
+- **Measured Page Load Time:** Approximately **1.1 seconds**
 - **Measurement Tools:**
   - **Chrome DevTools Network Tab:** to measure the time taken for initial requests and resource loading
   - **[PageSpeed Insights](https://pagespeed.web.dev/):** for performance audits and load time metrics
